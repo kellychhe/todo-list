@@ -1,0 +1,87 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+html{
+  background-color: #d9cae3;
+}
+.crossOut{
+  text-decoration: line-through;
+  color: gray;
+}
+.message{
+  text-decoration: none;
+  font-style: italic;
+  visibility: visible ;
+  color: black;
+}
+span{
+  visibility: hidden;
+  display: inline-block;
+}
+ul{
+  background-color: #e0d8e6;
+}
+form input{
+  width: 75%;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+form button{
+  width: 20%;
+  margin-left: 2%;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 20px;
+}
+li button{
+  border-radius: 50%;
+  border: 1px solid gray;
+  font-size: 14px;
+  margin: 0 20px;
+  color: gray;
+  vertical-align: center;
+}
+h1, button, input, p, ul, div{
+  font-family: 'Shadows Into Light Two', 'Helvetica', sans-serif;
+  align-self: center;
+}
+h1{
+  font-size: 50px;
+}
+ul{
+  font-size: 22px;
+  width: 75%;
+  border-radius: 20px;
+  list-style-type: "★";
+}
+li{
+  padding-left: 10px;
+}
+p{
+  font-size: 20px;
+}
+div button{
+  font-size: 20px;
+  border-radius: 10px;
+}
