@@ -6,7 +6,8 @@ const {ObjectId} = require('mongodb') //gives access to _id in mongodb
 
 var db //declares variable to use later
 
-const url = 'mongodb+srv://kellychhe:Poop00@cluster0.2unid.mongodb.net/?retryWrites=true&w=majority'
+require('dotenv').config()
+
 const dbName = "toDoList"; //name of database
 
 app.listen(8000, () => { // listening on port 3000
