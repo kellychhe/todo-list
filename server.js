@@ -3,6 +3,7 @@ const app = express() // app is telling express function to run
 const bodyParser = require('body-parser') //access body parser module
 const MongoClient = require('mongodb').MongoClient //access mongodb
 const {ObjectId} = require('mongodb') //gives access to _id in mongodb
+const port = process.env.PORT || 8000
 
 var db //declares variable to use later
 
@@ -10,7 +11,7 @@ require('dotenv').config()
 
 const dbName = "toDoList"; //name of database
 
-app.listen(8000, () => { // listening on port 3000
+app.listen(port, () => { // listening on port 3000
     MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
         if(error) {
             throw error;
