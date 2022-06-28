@@ -8,7 +8,7 @@ const port = process.env.PORT || 8000
 var db //declares variable to use later
 
 require('dotenv').config()
-
+const url = process.env.MONGODB_URL
 const dbName = "toDoList"; //name of database
 
 app.listen(port, () => { // listening on port 3000
